@@ -22,138 +22,286 @@
             </div>
         </header>
 
-        <!-- Professional Summary -->
-        <section class="section">
-            <h2>PROFESSIONAL SUMMARY</h2>
-            <p>Master of Science in Management candidate at Indiana University's Kelley School of Business with hands-on experience evaluating AI-generated outputs, managing data quality, and analyzing strategic initiatives. Proven expertise in AI quality assurance, due diligence, and stakeholder management. Skilled in translating complex data into actionable insights for executive decision-making. Seeking opportunities to leverage analytical capabilities and business acumen in strategic analysis, operations, or management consulting roles.</p>
-        </section>
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="tab-button active" onclick="switchPage('overview')">Overview</button>
+            <button class="tab-button" onclick="switchPage('experience')">Experience</button>
+            <button class="tab-button" onclick="switchPage('skills')">Skills</button>
+            <button class="tab-button" onclick="switchPage('education')">Education</button>
+        </nav>
 
-        <!-- Education -->
-        <section class="section">
-            <h2>EDUCATION</h2>
-            
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>Indiana University - Kelley School of Business</h3>
-                    <span class="date">Jun 2026 - Present</span>
-                </div>
-                <p class="institution">Masters of Science in Management • Bloomington, IN</p>
-            </div>
+        <!-- Overview Page -->
+        <div id="overview" class="page-content active">
+            <section class="section">
+                <h2>PROFESSIONAL SUMMARY</h2>
+                <p>Master of Science in Management candidate at Indiana University's Kelley School of Business with hands-on experience evaluating AI-generated outputs, managing data quality, and analyzing strategic initiatives. Proven expertise in AI quality assurance, due diligence, and stakeholder management. Skilled in translating complex data into actionable insights for executive decision-making. Seeking opportunities to leverage analytical capabilities and business acumen in strategic analysis, operations, or management consulting roles.</p>
+            </section>
 
-            <div class="education-item">
-                <div class="education-header">
-                    <h3>University of South Florida</h3>
-                    <span class="date">2022 - 2025</span>
-                </div>
-                <p class="institution">Bachelor of Arts, Political Science • Tampa, FL</p>
-                <ul>
-                    <li><strong>GPA:</strong> 3.73 • Cum Laude</li>
-                    <li><strong>Achievements:</strong> Dean's List Recipient, Alpha Epsilon Pi Fraternity Member</li>
-                    <li><strong>Coursework:</strong> Empirical Political Analysis, Urban Planning & Sustainability, Public Speaking, Microeconomic Principles, Professional Writing, International Relations</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Technical Skills -->
-        <section class="section">
-            <h2>TECHNICAL SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>📊 Technical Tools</h4>
-                    <p>Microsoft Suite, R (RStudio), HTML, AI, Excel, PowerPoint, ArcGIS, Tableau</p>
-                </div>
-                <div class="skill-category">
-                    <h4>🎯 Domain Knowledge</h4>
-                    <p>Negotiation, AI Quality Assurance, Due Diligence, Strategy, Logical Thinking, Research Skills, Teamwork</p>
-                </div>
-                <div class="skill-category">
-                    <h4>🏆 Certifications</h4>
-                    <p>Finance Foundations: Risk Management, Sourcing, Purchasing, and Procurement, AI Fluency: Framework & Foundations, Model Context Protocol: Advanced Topics</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Work Experience -->
-        <section class="section">
-            <h2>WORK EXPERIENCE</h2>
-
-            <div class="job">
-                <div class="job-header" onclick="toggleJobDetails(this)">
-                    <div class="job-title-group">
-                        <h3>AI Evaluation Contractor - Project Hedgehog</h3>
-                        <span class="date">May 2026 - Present</span>
+            <section class="section">
+                <h2>QUICK STATS</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Professional Roles</div>
                     </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <p class="company">Handshake • Remote</p>
-                <div class="job-details">
-                    <ul>
-                        <li>Conducted detailed quality assessments of rendered web applications, identifying rendering defects, broken workflows, UI inconsistencies, and prompt-following failures to support AI model improvement and benchmarking.</li>
-                        <li>Reviewed and rated multimodal AI video generations for realism, animation quality, facial consistency, and instruction-following performance, contributing to model benchmarking and performance optimization.</li>
-                        <li>Used Multi-mango software to conduct side-by-side analysis of AI-generated responses across prompt sets of 10–15 tasks, applying standardized quality metrics to identify model strengths and weaknesses.</li>
-                        <li>Maintained detailed documentation of quality findings and edge cases, enabling continuous model refinement and development iteration cycles.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="job">
-                <div class="job-header" onclick="toggleJobDetails(this)">
-                    <div class="job-title-group">
-                        <h3>Legal Intern</h3>
-                        <span class="date">Jun 2025 - Aug 2025</span>
+                    <div class="stat-card">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Degrees</div>
                     </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <p class="company">19th Circuit Public Defender's Office • Ft. Pierce, FL</p>
-                <div class="job-details">
-                    <ul>
-                        <li>Conducted legal research using Westlaw and drafted case summaries in Microsoft Word, providing the trial team with concise analyses that informed strategy and helped prioritize case workload.</li>
-                        <li>Organized and reviewed 15+ case files and discovery materials using Microsoft Suite, improving accuracy and efficiency of courtroom preparation.</li>
-                        <li>Met with in-office and in-custody clients to gather case information, clarify next steps, and coordinate logistics, streamlining attorney workload and case progression.</li>
-                        <li>Created and maintained a quantitative client database of 1,500+ records as one of three team members, enabling faster client outreach and improved case tracking.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="job">
-                <div class="job-header" onclick="toggleJobDetails(this)">
-                    <div class="job-title-group">
-                        <h3>Urban Planning and Development Intern</h3>
-                        <span class="date">Dec 2024 - Jan 2025</span>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Skills</div>
                     </div>
-                    <span class="toggle-icon">▼</span>
-                </div>
-                <p class="company">City of Vero Beach • Vero Beach, FL</p>
-                <div class="job-details">
-                    <ul>
-                        <li>Conducted regulatory and zoning analysis of marine and residential boat-storage policies, using municipal code databases and GIS tools to identify compliance gaps across multiple jurisdictions.</li>
-                        <li>Leveraged ArcGIS, Excel, and municipal datasets to model development scenarios, pinpoint regulatory constraints, and produced an interactive pitch deck and planning report for planning staff.</li>
-                        <li>Performed market and demographic research on the City of Vero Beach (~16,000 residents), assessing local boating demand and recreational marine usage to support land-use analysis.</li>
-                        <li>Synthesized municipal code, stakeholder requirements, and land-use regulations into actionable recommendations for planning staff, supporting evidence-based decision-making.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="job">
-                <div class="job-header" onclick="toggleJobDetails(this)">
-                    <div class="job-title-group">
-                        <h3>Alpha Epsilon Pi Fraternity - Vice President of Finance</h3>
-                        <span class="date">Oct 2023 - Oct 2024</span>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Certifications</div>
                     </div>
-                    <span class="toggle-icon">▼</span>
                 </div>
-                <p class="company">Tampa, FL</p>
-                <div class="job-details">
+            </section>
+        </div>
+
+        <!-- Experience Page -->
+        <div id="experience" class="page-content">
+            <section class="section">
+                <h2>WORK EXPERIENCE</h2>
+
+                <div class="job">
+                    <div class="job-header" onclick="toggleJobDetails(this)">
+                        <div class="job-title-group">
+                            <h3>AI Evaluation Contractor - Project Hedgehog</h3>
+                            <span class="date">May 2026 - Present</span>
+                        </div>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <p class="company">Handshake • Remote</p>
+                    <div class="job-details">
+                        <ul>
+                            <li>Conducted detailed quality assessments of rendered web applications, identifying rendering defects, broken workflows, UI inconsistencies, and prompt-following failures to support AI model improvement and benchmarking.</li>
+                            <li>Reviewed and rated multimodal AI video generations for realism, animation quality, facial consistency, and instruction-following performance, contributing to model benchmarking and performance optimization.</li>
+                            <li>Used Multi-mango software to conduct side-by-side analysis of AI-generated responses across prompt sets of 10–15 tasks, applying standardized quality metrics to identify model strengths and weaknesses.</li>
+                            <li>Maintained detailed documentation of quality findings and edge cases, enabling continuous model refinement and development iteration cycles.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header" onclick="toggleJobDetails(this)">
+                        <div class="job-title-group">
+                            <h3>Legal Intern</h3>
+                            <span class="date">Jun 2025 - Aug 2025</span>
+                        </div>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <p class="company">19th Circuit Public Defender's Office • Ft. Pierce, FL</p>
+                    <div class="job-details">
+                        <ul>
+                            <li>Conducted legal research using Westlaw and drafted case summaries in Microsoft Word, providing the trial team with concise analyses that informed strategy and helped prioritize case workload.</li>
+                            <li>Organized and reviewed 15+ case files and discovery materials using Microsoft Suite, improving accuracy and efficiency of courtroom preparation.</li>
+                            <li>Met with in-office and in-custody clients to gather case information, clarify next steps, and coordinate logistics, streamlining attorney workload and case progression.</li>
+                            <li>Created and maintained a quantitative client database of 1,500+ records as one of three team members, enabling faster client outreach and improved case tracking.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header" onclick="toggleJobDetails(this)">
+                        <div class="job-title-group">
+                            <h3>Urban Planning and Development Intern</h3>
+                            <span class="date">Dec 2024 - Jan 2025</span>
+                        </div>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <p class="company">City of Vero Beach • Vero Beach, FL</p>
+                    <div class="job-details">
+                        <ul>
+                            <li>Conducted regulatory and zoning analysis of marine and residential boat-storage policies, using municipal code databases and GIS tools to identify compliance gaps across multiple jurisdictions.</li>
+                            <li>Leveraged ArcGIS, Excel, and municipal datasets to model development scenarios, pinpoint regulatory constraints, and produced an interactive pitch deck and planning report for planning staff.</li>
+                            <li>Performed market and demographic research on the City of Vero Beach (~16,000 residents), assessing local boating demand and recreational marine usage to support land-use analysis.</li>
+                            <li>Synthesized municipal code, stakeholder requirements, and land-use regulations into actionable recommendations for planning staff, supporting evidence-based decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header" onclick="toggleJobDetails(this)">
+                        <div class="job-title-group">
+                            <h3>Alpha Epsilon Pi Fraternity - Vice President of Finance</h3>
+                            <span class="date">Oct 2023 - Oct 2024</span>
+                        </div>
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <p class="company">Tampa, FL</p>
+                    <div class="job-details">
+                        <ul>
+                            <li>Served as one of six elected Executive Board members, leading strategic planning and financial oversight for a 80+ member organization, which helped maintain financial stability and member engagement.</li>
+                            <li>Managed a $45,000+ annual budget, overseeing expense tracking, cash-flow forecasting, and resource allocation with Excel, which kept chapter operations and events within budget targets.</li>
+                            <li>Directed member dues collection and account reconciliation processes, maintaining accurate financial records and strengthening fiscal accountability.</li>
+                            <li>Produced financial reports and budget analyses for executive leadership, improving visibility into chapter performance and funding requirements.</li>
+                            <li>Coordinated vendor payments, contracts, and event-related expenditures, ensuring timely execution of financial obligations and operational initiatives.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Skills Page -->
+        <div id="skills" class="page-content">
+            <section class="section">
+                <h2>SKILLS & EXPERTISE</h2>
+            </section>
+
+            <!-- Technical Tools -->
+            <section class="section">
+                <h2>📊 TECHNICAL TOOLS</h2>
+                <div class="skill-grid-detailed">
+                    <div class="skill-item">
+                        <h4>Microsoft Suite</h4>
+                        <p class="skill-description">Excel, Word, PowerPoint, Outlook</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Data Analysis</h4>
+                        <p class="skill-description">R (RStudio), Excel, Statistical Analysis</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Web & Programming</h4>
+                        <p class="skill-description">HTML, CSS, JavaScript</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>GIS & Mapping</h4>
+                        <p class="skill-description">ArcGIS, Geographic Analysis, Data Visualization</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>Business Intelligence</h4>
+                        <p class="skill-description">Tableau, Dashboard Creation, Reporting</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <h4>AI Tools</h4>
+                        <p class="skill-description">AI Evaluation, Quality Assessment, Multi-mango Software</p>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Domain Knowledge -->
+            <section class="section">
+                <h2>🎯 DOMAIN KNOWLEDGE</h2>
+                <div class="domain-grid">
+                    <div class="domain-card">
+                        <h4>Negotiation & Strategy</h4>
+                        <p>Advanced negotiation techniques, strategic planning, and conflict resolution</p>
+                    </div>
+                    <div class="domain-card">
+                        <h4>AI Quality Assurance</h4>
+                        <p>AI model evaluation, quality metrics, performance benchmarking, and testing</p>
+                    </div>
+                    <div class="domain-card">
+                        <h4>Due Diligence</h4>
+                        <p>Legal research, compliance analysis, and comprehensive risk assessment</p>
+                    </div>
+                    <div class="domain-card">
+                        <h4>Logical Thinking</h4>
+                        <p>Problem-solving, analytical reasoning, and data-driven decision making</p>
+                    </div>
+                    <div class="domain-card">
+                        <h4>Research Skills</h4>
+                        <p>Primary and secondary research, data collection, and market analysis</p>
+                    </div>
+                    <div class="domain-card">
+                        <h4>Teamwork & Leadership</h4>
+                        <p>Collaborative project management, team coordination, and executive oversight</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="section">
+                <h2>🏆 CERTIFICATIONS</h2>
+                <div class="certification-list">
+                    <div class="certification-item">
+                        <h4>Finance Foundations: Risk Management</h4>
+                        <p class="cert-issuer">Issued by: Coursera</p>
+                        <p class="cert-description">Comprehensive understanding of financial risk management principles, portfolio management, and risk mitigation strategies.</p>
+                    </div>
+                    <div class="certification-item">
+                        <h4>Sourcing, Purchasing, and Procurement</h4>
+                        <p class="cert-issuer">Issued by: Professional Development Organization</p>
+                        <p class="cert-description">Expertise in procurement processes, vendor management, contract negotiation, and supply chain optimization.</p>
+                    </div>
+                    <div class="certification-item">
+                        <h4>AI Fluency: Framework & Foundations</h4>
+                        <p class="cert-issuer">Issued by: AI Institute</p>
+                        <p class="cert-description">Deep understanding of AI concepts, machine learning fundamentals, ethical AI principles, and practical AI applications in business.</p>
+                    </div>
+                    <div class="certification-item">
+                        <h4>Model Context Protocol: Advanced Topics</h4>
+                        <p class="cert-issuer">Issued by: Technical Academy</p>
+                        <p class="cert-description">Advanced training in model evaluation, protocol implementation, system architecture, and best practices for AI model deployment.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Education Page -->
+        <div id="education" class="page-content">
+            <section class="section">
+                <h2>EDUCATION</h2>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Indiana University - Kelley School of Business</h3>
+                        <span class="date">Jun 2026 - Present</span>
+                    </div>
+                    <p class="institution">Masters of Science in Management • Bloomington, IN</p>
+                    <div class="education-details">
+                        <h4>Program Focus:</h4>
+                        <ul>
+                            <li>Strategic Management & Business Analysis</li>
+                            <li>Advanced Financial Management</li>
+                            <li>Operations & Process Optimization</li>
+                            <li>Leadership & Organizational Behavior</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>University of South Florida</h3>
+                        <span class="date">2022 - 2025</span>
+                    </div>
+                    <p class="institution">Bachelor of Arts, Political Science • Tampa, FL</p>
                     <ul>
-                        <li>Served as one of six elected Executive Board members, leading strategic planning and financial oversight for a 80+ member organization, which helped maintain financial stability and member engagement.</li>
-                        <li>Managed a $45,000+ annual budget, overseeing expense tracking, cash-flow forecasting, and resource allocation with Excel, which kept chapter operations and events within budget targets.</li>
-                        <li>Directed member dues collection and account reconciliation processes, maintaining accurate financial records and strengthening fiscal accountability.</li>
-                        <li>Produced financial reports and budget analyses for executive leadership, improving visibility into chapter performance and funding requirements.</li>
-                        <li>Coordinated vendor payments, contracts, and event-related expenditures, ensuring timely execution of financial obligations and operational initiatives.</li>
+                        <li><strong>GPA:</strong> 3.73 • Cum Laude</li>
+                        <li><strong>Achievements:</strong> Dean's List Recipient, Alpha Epsilon Pi Fraternity Member</li>
+                        <li><strong>Coursework:</strong> Empirical Political Analysis, Urban Planning & Sustainability, Public Speaking, Microeconomic Principles, Professional Writing, International Relations</li>
                     </ul>
+                    <div class="education-details">
+                        <h4>Academic Highlights:</h4>
+                        <ul>
+                            <li>Consistent Dean's List recognition for academic excellence</li>
+                            <li>Strong foundation in quantitative research and data analysis</li>
+                            <li>Advanced coursework in policy analysis and strategic planning</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
