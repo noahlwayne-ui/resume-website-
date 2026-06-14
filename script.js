@@ -9,9 +9,48 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Add fade-in animation on page load
-window.addEventListener('load', () => {
-    const sections = document.querySelectorAll('.section');
+// Page switching functionality
+function switchPage(pageId) {
+    // Hide all page contents
+    const allPages = document.querySelectorAll('.page-content');
+    allPages.forEach(page => {
+        page.classList.remove('active');
+    });
+
+    // Remove active class from all buttons
+    const allButtons = document.querySelectorAll('.tab-button');
+    allButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    // Show selected page
+    const selectedPage = document.getElementById(pageId);
+    if (selectedPage) {
+        selectedPage.classList.add('active');
+    }
+
+    // Add active class to clicked button
+    event.target.classList.add('active');
+
+    // Animate sections in the new page
+    animateSections();
+
+    // Scroll to top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Toggle job details dropdown
+function toggleJobDetails(headerElement) {
+    headerElement.classList.toggle('active');
+    const detailsElement = headerElement.nextElementSibling.nextElementSibling;
+    if (detailsElement && detailsElement.classList.contains('job-details')) {
+        detailsElement.classList.toggle('active');
+    }
+}
+
+// Animate sections on page load and page switch
+function animateSections() {
+    const sections = document.querySelectorAll('.page-content.active .section');
     sections.forEach((section, index) => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(20px)';
@@ -20,6 +59,23 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             section.style.opacity = '1';
             section.style.transform = 'translateY(0)';
+        }, 50);
+    });
+}
+
+// Add fade-in animation on page load
+window.addEventListener('load', () => {
+    animateSections();
+    
+    const statsCards = document.querySelectorAll('.stat-card');
+    statsCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        
+        setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
         }, 50);
     });
 });
@@ -109,6 +165,18 @@ document.addEventListener('keydown', (e) => {
         e.preventDefault();
         printResume();
     }
+
+    // Number keys for tab switching (1=Overview, 2=Experience, 3=Skills, 4=Education)
+    const tabMap = {
+        '1': 'overview',
+        '2': 'experience',
+        '3': 'skills',
+        '4': 'education'
+    };
+
+    if (tabMap[e.key]) {
+        switchPage(tabMap[e.key]);
+    }
 });
 
 // Smooth animations on element visibility
@@ -126,9 +194,15 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.job, .education-item, .skill-category').forEach(el => {
+// Observe job cards, education items, skill items
+document.querySelectorAll('.job, .education-item, .skill-item, .domain-card, .certification-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(10px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(el);
+});
+
+// Initialize first page with animations
+document.addEventListener('DOMContentLoaded', () => {
+    animateSections();
 });
